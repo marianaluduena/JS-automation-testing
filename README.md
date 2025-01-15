@@ -2,9 +2,22 @@
 
 This is a QA testing project with JavaScript using only the DevTools to automate Test Cases for the site Bugeater. This project wraps everything I've learned during the Course Basic JavaScript for Testers. 
 
+URL to Bugeater: https://bugeater.web.app/
+
+URL to the challenges section: https://bugeater.web.app/app/list
+
 # About Bugeater
 
-Bugeater is a practice web-app interactive learning plataform to develop testing skills. It has a few challenges that I'll cover in this project: 
+Bugeater is a practice web-app interactive learning plataform to develop testing skills. 
+
+It has a few challenges that I'll cover in this project: 
+
+# Learn Mode
+Challenge #1.1: Number Addition
+Challenge #1.2: Number Division
+Challenge #1.3: Password Restore
+Challenge #1.4: Update Profile
+Challenge #1.5: Number Multiplication
 
 # Scripted Testing
 Challenge #2.1: Number Multiplication
