@@ -1,11 +1,69 @@
 // Challenge 1.1: Number addition
 
+
+// First field's query
+let fistNumTxt = document.querySelector("#first");
+
+// Second field's query
+let secondNumbTxt = document.querySelector("#second");
+
+// Message's query
+let expectedResultTxt = document.querySelector("#testForm > p:nth-child(2)");
+
+// Calculate Btn's query
+let calculateBtnTxt = document.querySelector("form > div._challengeFormActions_1a4cy_109 > button._challengeButtons_1a4cy_115.btn.btn-primary");
+
+// Clear Btn's query
+let clearBtnTxt = document.querySelector("#form > div._challengeFormActions_1a4cy_109 > button._challengeButtons_1a4cy_115.btn.btn-secondary");
+
+
+/** Function to fill automatically online forms when combined with the fillForm function (otherwise the input data will not be visible)
+ * 
+ * @param {*} element 
+ * @param {*} value 
+ */
+
+function fillText(element, value) {
+    
+    let lastValue = element.value;
+        element.value = value;
+        
+        let event = new Event("input",
+        
+        {
+            
+        target: element,
+        bubbles: true
+});
+        
+    // React 15
+       
+     event.simulated = true;
+       
+    // React 16
+        
+    let tracker = element._valueTracker;
+        
+    if (tracker) {
+         
+    tracker.setValue(lastValue);
+        
+}
+    element.dispatchEvent(event);
+    
+    };
+    
+
 /* TEST CASE 1: 
 
 Enter "1" and "2" into the input fields, then click on the "Calculate" button. 
 Expected Result: "3". 
 
 */
+
+
+
+
 
 
 /* TEST CASE 2: 
