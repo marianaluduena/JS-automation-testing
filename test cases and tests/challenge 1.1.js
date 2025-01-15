@@ -1,14 +1,13 @@
 // Challenge 1.1: Number addition
 
-
 // First field's query
-let fistNumTxt = document.querySelector("#first");
+let firstNumTxt = document.querySelector("#first");
 
 // Second field's query
 let secondNumbTxt = document.querySelector("#second");
 
 // Message's query
-let expectedResultTxt = document.querySelector("#testForm > p:nth-child(2)");
+let expectedResult = document.querySelector("#testForm > p:nth-child(2)");
 
 // Calculate Btn's query
 let calculateBtnTxt = document.querySelector("form > div._challengeFormActions_1a4cy_109 > button._challengeButtons_1a4cy_115.btn.btn-primary");
@@ -61,9 +60,36 @@ Expected Result: "3".
 
 */
 
+function fillForm(firstNum, secondNum, tc, actualResult){
+
+    // Here will the function fillText used to fill the form automatically
+
+    fillText(firstNumTxt, firstNum);
+    fillText(secondNumbTxt, secondNum);
+
+    // Let's add the click event to the Calculate button to be clicked when this function runs
+
+    calculateBtnTxt.click();
+
+    // Now, we have to keep in mind what message will be display with the result
+
+    // If the result matches the expected result (3), then the test case will pass
+    if(expectedResult.innerHTML == actualResult){
+
+        console.log(tc, "PASSED");
+
+        // If not, then the test case will fail
+    } else{
+
+        console.log(tc, "FAILED");
+    }
+
+}
 
 
+// Let's run this test case here
 
+fillForm(1,2,"Enter 1 and 2 into the input fields, then click on the Calculate button. Expected Result: 3", 3);
 
 
 /* TEST CASE 2: 
