@@ -10,7 +10,7 @@ URL to the challenges section: https://bugeater.web.app/app/list
 
 Bugeater is a practice web-app interactive learning plataform to develop testing skills. 
 
-It has a few challenges that I'll cover in this project: 
+It has a few challenges that will be cover in this project: 
 
 ## Learn Mode 🎓
 
@@ -28,15 +28,3 @@ It has a few challenges that I'll cover in this project:
 - Challenge #2.4: Create Profile
 - Challenge #2.5: Currency Converter
 
-## Test Case Generator ⚙️
-
-- Challenge #3.1: Number Summation
-
-## Exploratory Testing 🧭
-
-- Challenge #4.1: Calculator
-- Challenge #4.2: Restore Password
-- Challenge #4.3: Book a Desk
-- Challenge #4.4: Division
-- Challenge #4.5: Email Validation
-- Challenge #4.6: Triangle
