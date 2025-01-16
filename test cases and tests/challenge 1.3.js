@@ -11,8 +11,8 @@ See the TC after the variables and functions declarations.
 // New password query
 let newPassTxt = document.querySelector("#first");
 
-// 
-let result;
+// Validation message that will be displayed once the new password is sended.
+let validationMessage;
 
 // Submit Btn query
 let submitBtn = document.querySelector("form > div._challengeFormActions_1a4cy_109 > button._challengeButtons_1a4cy_115.btn.btn-primary");
@@ -58,11 +58,11 @@ function fillText(element, value) {
  * 
  * @param {*} newPass
  * @param {*} tc test case
- * @param {*} expectedResult 
+ * @param {*} expectedFormat
  */
 
 
-function fillForm(newPass, tc, expectedResult){
+function fillForm(newPass, tc, expectedFormat){
 
     // Here will the function fillText used to fill the form automatically
 
@@ -74,10 +74,10 @@ function fillForm(newPass, tc, expectedResult){
 
     // Now, we have to keep in mind what message will be display with the result
 
-    // If the correct result matches the expected result, then the test case will pass
+    // If the validation message (format) matches the expected format, then the test case will pass
     // In this case, correctResult.innerHTML will display the message as FAILED, that's why it is skipped.
 
-    if(correctResult == expectedResult){
+    if(validationMessage == expectedFormat){
 
         console.log(tc, "PASSED");
 
@@ -89,9 +89,31 @@ function fillForm(newPass, tc, expectedResult){
 
 }
 
+/*
+
+PASSWORD REQUIREMENTS:
+
+1. Minimal length 5 symbols
+
+2. Maximum length 15 symbols
+
+3. Contains at least one small letter, one capital letter, one symbol, and one number
+
+4. Doesn't match the previous password "Passw0rd!7"
+
+*/
+
+
+
 /* TEST CASE 1: 
 
 Enter "P@ssw0rD" as the password, which meets all the requirements, and then click on the "Submit" button. 
 Expected result: "Valid Password".
 
 */
+
+validationMessage = "Valid Password";
+
+fillForm("P@ssw0rD", "TC-001: valid password format", "Valid Password");
+
+
