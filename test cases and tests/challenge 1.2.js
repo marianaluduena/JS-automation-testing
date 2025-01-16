@@ -60,6 +60,13 @@ function fillText(element, value) {
     };
     
 
+/** Function that converts the txt values (variables's queries) to data and fill the form automatically
+ * 
+ * @param {*} firstNum 
+ * @param {*} secondNum 
+ * @param {*} tc test case
+ * @param {*} expectedResult 
+ */
 
 
 function fillForm(firstNum, secondNum, tc, expectedResult){
