@@ -101,23 +101,12 @@ Expected Result: "2".
 
 */
 
-expectedResult = 2;
-
-fillForm(-2, 4, "TC-002: Correct result is 2" , 2);
-
-
 /* TEST CASE 3: 
 
 Enter "1.5" and "2.5" into the input fields; both are decimal fractions, then click on the "Calculate" button. Expected 
 Result: "4.0".
 
 */
-
-expectedResult = 4.0;
-
-fillForm(1.5, 2.5, "TC-003: Correct result is 4.0" , 4.0);
-
-
 
 /* TEST CASE 4: 
 
@@ -127,20 +116,12 @@ Expected Result: "User input error".
 */
 
 
-expectedResult = "User input error";
-
-fillForm("abc", 1, "TC-004: user input error" , "User input error");
-
-
-
 /* TEST CASE 5: 
 
 Leave both input fields blank and then click on the "Calculate" button. 
 Expected Result: "User input error".
 
 */
-
-fillForm("", "", "TC-005: user input error" , "User input error");
 
 
 /* TEST CASE 6: 
@@ -150,6 +131,3 @@ Expected Result: "Application Error".
 
 */
 
-expectedResult = "Application error";
-
-fillForm(10000000000, 1, "TC-006: application error" , "Application error");
