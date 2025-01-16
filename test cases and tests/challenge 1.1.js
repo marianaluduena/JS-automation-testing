@@ -7,7 +7,7 @@ let firstNumTxt = document.querySelector("#first");
 let secondNumbTxt = document.querySelector("#second");
 
 // On this case, given the HTML element is a <p>, the expected result must be manually added.
-let expectedResult;
+let correctResult;
 
 // Calculate Btn's query
 let calculateBtnTxt = document.querySelector("form > div._challengeFormActions_1a4cy_109 > button._challengeButtons_1a4cy_115.btn.btn-primary");
@@ -60,7 +60,7 @@ Expected Result: "3".
 
 */
 
-function fillForm(firstNum, secondNum, tc, actualResult){
+function fillForm(firstNum, secondNum, tc, expectedResult){
 
     // Here will the function fillText used to fill the form automatically
 
@@ -73,10 +73,10 @@ function fillForm(firstNum, secondNum, tc, actualResult){
 
     // Now, we have to keep in mind what message will be display with the result
 
-    // If the result matches the expected result (3), then the test case will pass
-    // In this case, expectedResult.innerHTML will display the message as FAILED
+    // If the correct result matches the expected result then the test case will pass
+    // In this case, correctResult.innerHTML will display the message as FAILED
 
-    if(expectedResult == actualResult){
+    if(correctResult == expectedResult){
 
         console.log(tc, "PASSED");
 
@@ -91,7 +91,7 @@ function fillForm(firstNum, secondNum, tc, actualResult){
 
 // Let's run this test case here
 
-expectedResult = 3;
+correctResult = 3;
 
 fillForm(1,2,"TC-001: correct result is 3", 3);
 
@@ -103,7 +103,7 @@ Expected Result: "2".
 
 */
 
-expectedResult = 2;
+correctResult = 2;
 
 fillForm(-2, 4, "TC-002: Correct result is 2" , 2);
 
@@ -115,7 +115,7 @@ Result: "4.0".
 
 */
 
-expectedResult = 4.0;
+correctResult = 4.0;
 
 fillForm(1.5, 2.5, "TC-003: Correct result is 4.0" , 4.0);
 
@@ -127,7 +127,7 @@ Expected Result: "User input error".
 
 */
 
-expectedResult = "User input error";
+correctResult = "User input error";
 
 fillForm("abc", 1, "TC-004: user input error" , "User input error");
 
@@ -149,6 +149,6 @@ Expected Result: "Application Error".
 
 */
 
-expectedResult = "Application error";
+correctResult = "Application error";
 
 fillForm(10000000000, 1, "TC-006: application error" , "Application error");
