@@ -1,4 +1,11 @@
-// Challenge 1.1: Number addition
+/* Challenge 1.2: Number divition 
+
+Follow the six step-by-step appearing instructions, entering values into the form. This way, you conduct a basic check of the form's proper functioning. 
+You are practically applying the Scripted Testing. 
+
+See the TC after the variables and functions declarations.
+
+*/
 
 // First field's query
 let firstNumTxt = document.querySelector("#first");
@@ -6,8 +13,8 @@ let firstNumTxt = document.querySelector("#first");
 // Second field's query
 let secondNumbTxt = document.querySelector("#second");
 
-// On this case, given the HTML element is a <p>, the expected result must be manually added.
-let expectedResult = 3;
+// On this case, given the HTML element is a <p>, the correct result must be manually added later.
+let correctResult;
 
 // Calculate Btn's query
 let calculateBtnTxt = document.querySelector("form > div._challengeFormActions_1a4cy_109 > button._challengeButtons_1a4cy_115.btn.btn-primary");
@@ -53,14 +60,9 @@ function fillText(element, value) {
     };
     
 
-/* TEST CASE 1: 
 
-Enter "1" and "2" into the input fields, then click on the "Calculate" button. 
-Expected Result: "3". 
 
-*/
-
-function fillForm(firstNum, secondNum, tc, actualResult){
+function fillForm(firstNum, secondNum, tc, expectedResult){
 
     // Here will the function fillText used to fill the form automatically
 
@@ -73,10 +75,10 @@ function fillForm(firstNum, secondNum, tc, actualResult){
 
     // Now, we have to keep in mind what message will be display with the result
 
-    // If the result matches the expected result (3), then the test case will pass
-    // In this case, expectedResult.innerHTML will display the message as FAILED
+    // If the correct result matches the expected result, then the test case will pass
+    // In this case, correctResult.innerHTML will display the message as FAILED, that's why it is skipped.
 
-    if(expectedResult == actualResult){
+    if(correctResult == expectedResult){
 
         console.log(tc, "PASSED");
 
@@ -88,25 +90,44 @@ function fillForm(firstNum, secondNum, tc, actualResult){
 
 }
 
+/* TEST CASE 1: 
 
-// Let's run this test case here
-
-fillForm(1,2,"TC-001: correct result is 3", 3);
-
-
-/* TEST CASE 2: 
-
-Input "-2" and "4" into the input fields where one number is negative, then click on the "Calculate" button. 
+Enter "4" and "2" into the input fields, then click on the "Calculate" button. 
 Expected Result: "2".
 
 */
 
-/* TEST CASE 3: 
+// The correct result must be declared, otherwise the if else conditional will display the test as FAILED although the result is 2
+correctResult = 2;
 
-Enter "1.5" and "2.5" into the input fields; both are decimal fractions, then click on the "Calculate" button. Expected 
-Result: "4.0".
+// The expected result must be added in the function
+
+fillForm(4,2,"TC-001: correct result is 2", 2);
+
+
+/* TEST CASE 2: 
+
+Input "-10" and "2" into the input fields where one number is negative, then click on the "Calculate" button. 
+Expected Result: "-5".
 
 */
+
+correctResult = -5;
+
+fillForm(-10, 2,"TC-002: correct result is -5", -5);
+
+
+/* TEST CASE 3: 
+
+Enter "5" and "2" into the input fields, then click on the "Calculate" button. 
+Expected Result: "2.5" (decimal fraction). 
+
+*/
+
+correctResult = 2.5;
+
+fillForm(5, 2,"TC-003: correct result is 2.5", 2.5);
+
 
 /* TEST CASE 4: 
 
@@ -114,6 +135,10 @@ Enter "abc" in the First Number input field and "1" in the Second Number input f
 Expected Result: "User input error".
 
 */
+
+correctResult = "User imput error";
+
+fillForm("abc", 1,"TC-004: correct result is User imput error", "User imput error");
 
 
 /* TEST CASE 5: 
@@ -123,11 +148,18 @@ Expected Result: "User input error".
 
 */
 
+correctResult = "User input error";
+
+fillForm("", "","TC-005: correct result is User imput error", "User imput error");
+
 
 /* TEST CASE 6: 
 
-Input "10000000000" into the first input field, which is too large, and set the second value to "1", then click on the "Calculate" button. 
+Input "10" into the first input field and "0" into the second input field, then click on the "Calculate" button. 
 Expected Result: "Application Error".
 
 */
 
+correctResult = "Application Error";
+
+fillForm("10", "0","TC-006: correct result is Application Error", "Application Error");

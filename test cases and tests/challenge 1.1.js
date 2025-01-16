@@ -7,7 +7,7 @@ let firstNumTxt = document.querySelector("#first");
 let secondNumbTxt = document.querySelector("#second");
 
 // On this case, given the HTML element is a <p>, the expected result must be manually added.
-let expectedResult = 3;
+let expectedResult;
 
 // Calculate Btn's query
 let calculateBtnTxt = document.querySelector("form > div._challengeFormActions_1a4cy_109 > button._challengeButtons_1a4cy_115.btn.btn-primary");
@@ -91,6 +91,8 @@ function fillForm(firstNum, secondNum, tc, actualResult){
 
 // Let's run this test case here
 
+expectedResult = 3;
+
 fillForm(1,2,"TC-001: correct result is 3", 3);
 
 
@@ -118,7 +120,6 @@ expectedResult = 4.0;
 fillForm(1.5, 2.5, "TC-003: Correct result is 4.0" , 4.0);
 
 
-
 /* TEST CASE 4: 
 
 Enter "abc" in the First Number input field and "1" in the Second Number input field, then click on the "Calculate" button. 
@@ -126,11 +127,9 @@ Expected Result: "User input error".
 
 */
 
-
 expectedResult = "User input error";
 
 fillForm("abc", 1, "TC-004: user input error" , "User input error");
-
 
 
 /* TEST CASE 5: 
