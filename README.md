@@ -8,7 +8,7 @@ URL to the challenges section: https://bugeater.web.app/app/list
 
 ## About Bugeater
 
-Bugeater is a practice web-app interactive learning plataform to develop testing skills. 
+Bugeater is a practice web-app interactive learning platform to develop testing skills. 
 
 It has a few challenges that will be cover in this project: 
 
