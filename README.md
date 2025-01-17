@@ -6,6 +6,12 @@ URL to Bugeater: https://bugeater.web.app/
 
 URL to the challenges section: https://bugeater.web.app/app/list
 
+## Project Details
+
+- Environment: Production.
+- OS: Windows 11
+- Browser: Chrome Version 131.0.6778.70
+
 ## About Bugeater
 
 Bugeater is a practice web-app interactive learning platform to develop testing skills. 
