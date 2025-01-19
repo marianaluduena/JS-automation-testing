@@ -104,7 +104,6 @@ PASSWORD REQUIREMENTS:
 */
 
 
-
 /* TEST CASE 1: 
 
 Enter "P@ssw0rD" as the password, which meets all the requirements, and then click on the "Submit" button. 
@@ -116,4 +115,13 @@ validationMessage = "Valid Password";
 
 fillForm("P@ssw0rD", "TC-001: valid password format", "Valid Password");
 
+/* TEST CASE 2: 
 
+Enter "hElloW0rld" as the password, which does not meet all the requirements, and click the "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+validationMessage = "Invalid Password";
+
+fillForm("hElloW0rld", "TC-002: Invalid password format", "Invalid Password");
