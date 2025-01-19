@@ -125,3 +125,14 @@ Expected result: "Invalid Password".
 validationMessage = "Invalid Password";
 
 fillForm("hElloW0rld", "TC-002: Invalid password format", "Invalid Password");
+
+/* TEST CASE 3: 
+
+Enter the same password as the saved one - "Passw0rd!7" and click the "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+validationMessage = "Invalid Password";
+
+fillForm("Passw0rd!7", "TC-003: Invalid password format", "Invalid Password");
