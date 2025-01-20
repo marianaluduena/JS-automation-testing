@@ -126,6 +126,7 @@ validationMessage = "Invalid Password";
 
 fillForm("hElloW0rld", "TC-002: Invalid password format", "Invalid Password");
 
+
 /* TEST CASE 3: 
 
 Enter the same password as the saved one - "Passw0rd!7" and click the "Submit" button. 
@@ -136,3 +137,27 @@ Expected result: "Invalid Password".
 validationMessage = "Invalid Password";
 
 fillForm("Passw0rd!7", "TC-003: Invalid password format", "Invalid Password");
+
+
+/* TEST CASE 4: 
+
+Leave the "New Password" field empty and click "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+validationMessage = "Invalid Password";
+
+fillForm("", "TC-004: Missing password", "Invalid Password");
+
+
+/* TEST CASE 5: 
+
+Enter "Mo7%" as the password, which is less than 5 characters long, and click the "Submit" button.
+Expected result: "Invalid Password".
+
+*/
+
+validationMessage = "Invalid Password";
+
+fillForm("", "TC-005: Missing password", "Invalid Password");
