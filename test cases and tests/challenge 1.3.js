@@ -234,7 +234,42 @@ fillForm("001122", "TC-009: Only  numbers password", "Invalid Password");
 
 /* Improvement suggestion
 
-- Showing the user an error messagge saying that the password is missing at least one capital letter, one lower letter and  
-one symbol.
+
+*/
+
+
+/* TEST CASE 10: Only symbols password
+
+Enter "@@@@@" as the password, which contains only special characters, and click the "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+
+validationMessage = "Invalid Password";
+
+fillForm("@@@@@", "TC-010: Only special characters password", "Invalid Password");
+
+/* Improvement suggestion
+
+
+
+*/
+
+/* TEST CASE 11: Not allowed symbols password
+
+Enter "Κωδικός" as the password, which contains the not-allowed symbol, and then click on the "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+
+validationMessage = "Invalid Password";
+
+fillForm("@@@@@", "TC-011: Only not allowed password", "Invalid Password");
+
+/* Improvement suggestion
+
+
 
 */
