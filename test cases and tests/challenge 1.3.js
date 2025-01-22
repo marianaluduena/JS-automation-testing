@@ -151,7 +151,7 @@ validationMessage = "Invalid Password";
 fillForm("", "TC-004: Missing password", "Invalid Password");
 
 
-/* TEST CASE 5: 
+/* TEST CASE 5: 5 characters long password
 
 Enter "Mo7%" as the password, which is less than 5 characters long, and click the "Submit" button.
 Expected result: "Invalid Password".
@@ -160,4 +160,4 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("", "TC-005: Missing password", "Invalid Password");
+fillForm("Mo7%", "TC-005: 5 characters long password", "Invalid Password");
