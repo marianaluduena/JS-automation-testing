@@ -176,8 +176,27 @@ fillForm("asdfghjklpoiuytrewq", "TC-006: Characters exceeded password", "Invalid
 
 /* Improvement suggestion
 
-- Show the user An error messagge could be usefull, letting them know the password entered is too long
+- Show the user an error messagge could be usefull, letting them know the password entered is too long
 
 - The message could show the user how many characters are allowed.
+
+*/
+
+/* TEST CASE 7: Only uppercase letters password
+
+Enter "ONLYCAPITAL" as the password, which contains only uppercase letters, and then click on the "Submit" button. 
+xpected result: "Invalid Password".
+
+*/
+
+
+validationMessage = "Invalid Password";
+
+fillForm("ONLYCAPITAL", "TC-007: Only uppercase letters password", "Invalid Password");
+
+/* Improvement suggestion
+
+- Showing the user an error messagge saying that the password is missing at least one number, one small letter and  
+one symbol.
 
 */
