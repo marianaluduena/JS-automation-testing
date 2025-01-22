@@ -161,3 +161,23 @@ Expected result: "Invalid Password".
 validationMessage = "Invalid Password";
 
 fillForm("Mo7%", "TC-005: 5 characters long password", "Invalid Password");
+
+
+/* TEST CASE 6: Characters exceeded password
+
+Enter "asdfghjklpoiuytrewq" as the password, which exceeds 15 characters, and then click the "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+validationMessage = "Invalid Password";
+
+fillForm("asdfghjklpoiuytrewq", "TC-006: Characters exceeded password", "Invalid Password");
+
+/* Improvement suggestion
+
+- Show the user An error messagge could be usefull, letting them know the password entered is too long
+
+- The message could show the user how many characters are allowed.
+
+*/
