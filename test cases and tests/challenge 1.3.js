@@ -200,3 +200,22 @@ fillForm("ONLYCAPITAL", "TC-007: Only uppercase letters password", "Invalid Pass
 one symbol.
 
 */
+
+/* TEST CASE 8: Only lowercase letters password
+
+Enter "onlylower" as the password, which contains only lowercase letters, and then click on the "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+
+validationMessage = "Invalid Password";
+
+fillForm("onlylower", "TC-008: Only lowercase letters password", "Invalid Password");
+
+/* Improvement suggestion
+
+- Showing the user an error messagge saying that the password is missing at least one number, one capital letter and  
+one symbol.
+
+*/
