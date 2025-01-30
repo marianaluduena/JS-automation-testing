@@ -173,12 +173,12 @@ fillForm("", "TC-004: Empty password field", "Invalid Password");
 
 /* Improvement suggestion
 
-- Showing the user an error messagge or icon to let them know they must input a new password
+- Showing the user an error messagge or icon to let them know they must input a new password.
 */
 
 
 
-/* TEST CASE 5: 5 characters long password
+/* TEST CASE 5: 4 characters long password
 
 Enter "Mo7%" as the password, which is less than 5 characters long, and click the "Submit" button.
 Expected result: "Invalid Password".
@@ -187,7 +187,13 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("Mo7%", "TC-005: 5 characters long password", "Invalid Password");
+fillForm("Mo7%", "TC-005: 4 characters long password", "Invalid Password");
+
+
+/* Improvement suggestion
+
+- Showing the user an error messagge or icon to let them know their password must be at least 5 characters long.
+*/
 
 
 /* TEST CASE 6: Characters exceeded password
@@ -201,13 +207,17 @@ validationMessage = "Invalid Password";
 
 fillForm("asdfghjklpoiuytrewq", "TC-006: Characters exceeded password", "Invalid Password");
 
+
+
 /* Improvement suggestion
 
-- Show the user an error messagge could be usefull, letting them know the password entered is too long
+- Show the user an error messagge could be usefull, letting them know the password entered is too long.
 
 - The message could show the user how many characters are allowed.
 
 */
+
+
 
 /* TEST CASE 7: Only uppercase letters password
 
