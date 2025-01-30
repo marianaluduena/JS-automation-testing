@@ -234,9 +234,10 @@ fillForm("ONLYCAPITAL", "TC-007: Only uppercase letters password", "Invalid Pass
 /* Improvement suggestion
 
 - Showing the user an error messagge saying that the password is missing at least one number, one small letter and  
-one symbol.
+one special character.
 
 */
+
 
 /* TEST CASE 8: Only lowercase letters password
 
