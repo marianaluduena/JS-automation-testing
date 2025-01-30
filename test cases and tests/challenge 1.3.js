@@ -1,7 +1,16 @@
 /* Challenge 1.3: Password restore
 
-Follow the eleven step-by-step appearing instructions, entering an appropriate value into the "New Password" field. This way you conduct a basic check of the form proper functioning. 
-You are practically applying the Scripted Testing approach and checking the Basic Password criteria match.
+
+PASSWORD REQUIREMENTS:
+
+1. Minimal length 5 symbols
+
+2. Maximum length 15 symbols
+
+3. Contains at least one small letter, one capital letter, one symbol, and one number
+
+4. Doesn't match the previous password "Passw0rd!7"
+
 
 See the TC after the variables and functions declarations.
 
@@ -64,7 +73,7 @@ function fillText(element, value) {
 
 function fillForm(newPass, tc, expectedFormat){
 
-    // Here will the function fillText used to fill the form automatically
+    // Here will the function fillText fill the form automatically
 
     fillText(newPassTxt, newPass);
  
@@ -89,22 +98,8 @@ function fillForm(newPass, tc, expectedFormat){
 
 }
 
-/*
 
-PASSWORD REQUIREMENTS:
-
-1. Minimal length 5 symbols
-
-2. Maximum length 15 symbols
-
-3. Contains at least one small letter, one capital letter, one symbol, and one number
-
-4. Doesn't match the previous password "Passw0rd!7"
-
-*/
-
-
-/* TEST CASE 1: 
+/* TEST CASE 1: Valid password format
 
 Enter "P@ssw0rD" as the password, which meets all the requirements, and then click on the "Submit" button. 
 Expected result: "Valid Password".
@@ -114,6 +109,8 @@ Expected result: "Valid Password".
 validationMessage = "Valid Password";
 
 fillForm("P@ssw0rD", "TC-001: valid password format", "Valid Password");
+
+
 
 /* TEST CASE 2: 
 

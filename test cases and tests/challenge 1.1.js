@@ -6,7 +6,7 @@ let firstNumTxt = document.querySelector("#first");
 // Second field's query
 let secondNumbTxt = document.querySelector("#second");
 
-// On this case, given the HTML element is a <p>, the expected result must be manually added.
+// On this case, given the HTML element is a <p>, the correct result must be manually added.
 let correctResult;
 
 // Calculate Btn's query
@@ -59,6 +59,14 @@ Enter "1" and "2" into the input fields, then click on the "Calculate" button.
 Expected Result: "3". 
 
 */
+
+/** Function that converts the txt values (variables's queries) to data and fill the form automatically
+ * 
+ * @param {*} firstNum 
+ * @param {*} secondNum 
+ * @param {*} tc test case
+ * @param {*} expectedResult 
+ */
 
 function fillForm(firstNum, secondNum, tc, expectedResult){
 
