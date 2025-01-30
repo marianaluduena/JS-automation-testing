@@ -312,10 +312,15 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("@@@@@", "TC-011: Only not allowed password", "Invalid Password");
+fillForm("Κωδικός", "TC-011: Only not allowed symbol password", "Invalid Password");
+
 
 /* Improvement suggestion
 
+- Showing the user an error messagge saying that the characters are not valid.
+
+- Showing the user an error messagge saying that the password must haveg at least one capital letter, at least one lowercase letter,  
+one number and a special character allowed (!$#)
 
 
 */
