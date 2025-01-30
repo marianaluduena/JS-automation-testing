@@ -159,7 +159,7 @@ the previous password.
 
 
 
-/* TEST CASE 4: 
+/* TEST CASE 4: Empty password field
 
 Leave the "New Password" field empty and click "Submit" button. 
 Expected result: "Invalid Password".
@@ -168,7 +168,14 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("", "TC-004: Missing password", "Invalid Password");
+fillForm("", "TC-004: Empty password field", "Invalid Password");
+
+
+/* Improvement suggestion
+
+- Showing the user an error messagge or icon to let them know they must input a new password
+*/
+
 
 
 /* TEST CASE 5: 5 characters long password
