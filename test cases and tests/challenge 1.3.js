@@ -119,7 +119,7 @@ will improve the user's experience.
 
 
 
-/* TEST CASE 2: 
+/* TEST CASE 2: Missing special character password
 
 Enter "hElloW0rld" as the password, which does not meet all the requirements, and click the "Submit" button. 
 Expected result: "Invalid Password".
@@ -128,7 +128,15 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("hElloW0rld", "TC-002: Invalid password format", "Invalid Password");
+fillForm("hElloW0rld", "TC-002: Missing special character password", "Invalid Password");
+
+
+/* Improvement suggestion
+
+- Showing the user an error messagge or icon to let them know their password is missing a special character to
+match valid password format.
+*/
+
 
 
 /* TEST CASE 3: 
