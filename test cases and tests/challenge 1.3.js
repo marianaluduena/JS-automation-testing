@@ -234,8 +234,7 @@ fillForm("ONLYCAPITAL", "TC-007: Only uppercase letters password", "Invalid Pass
 /* Improvement suggestion
 
 - Showing the user an error messagge saying that the password is missing at least one number, one small letter and  
-one special character.
-
+one symbol
 */
 
 
@@ -251,12 +250,15 @@ validationMessage = "Invalid Password";
 
 fillForm("onlylower", "TC-008: Only lowercase letters password", "Invalid Password");
 
+
 /* Improvement suggestion
 
 - Showing the user an error messagge saying that the password is missing at least one number, one capital letter and  
 one symbol.
 
 */
+
+
 
 /* TEST CASE 9: Only numbers password
 
@@ -270,8 +272,11 @@ validationMessage = "Invalid Password";
 
 fillForm("001122", "TC-009: Only numbers password", "Invalid Password");
 
+
 /* Improvement suggestion
 
+- Showing the user an error messagge saying that the password is missing at least one capital letter, at least one lowercase letter and  
+one symbol.
 
 */
 
