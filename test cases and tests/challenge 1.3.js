@@ -139,7 +139,7 @@ match valid password format.
 
 
 
-/* TEST CASE 3: 
+/* TEST CASE 3: Password already restored
 
 Enter the same password as the saved one - "Passw0rd!7" and click the "Submit" button. 
 Expected result: "Invalid Password".
@@ -148,7 +148,15 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("Passw0rd!7", "TC-003: Invalid password format", "Invalid Password");
+fillForm("Passw0rd!7", "TC-003: Password already restored", "Invalid Password");
+
+
+/* Improvement suggestion
+
+- Showing the user an error messagge or icon to let them know their password was already saved before, matching
+the previous password.
+*/
+
 
 
 /* TEST CASE 4: 
