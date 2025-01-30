@@ -312,7 +312,7 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("Κωδικός", "TC-011: Only not allowed symbol password", "Invalid Password");
+fillForm("Κωδικός", "TC-011: Not allowed symbols password", "Invalid Password");
 
 
 /* Improvement suggestion
@@ -324,3 +324,18 @@ one number and a special character allowed (!$#)
 
 
 */
+
+
+// Until now the TC were in the happy path, the following TC will try to be "thinking out of the box"
+
+/* TEST CASE 12: Valid format with special characters
+
+Enter "Passw0rd!?$#/´´" as the password, which contains the not-allowed symbol, and then click on the "Submit" button. 
+Expected result: "Invalid Password".
+
+*/
+
+
+validationMessage = "Valid Password";
+
+fillForm("Passw0rd!?$#/´´", "TC-012: Valid format with special characters", "Valid Password");
