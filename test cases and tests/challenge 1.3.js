@@ -293,8 +293,11 @@ validationMessage = "Invalid Password";
 
 fillForm("@@@@@", "TC-010: Only special characters password", "Invalid Password");
 
+
 /* Improvement suggestion
 
+- Showing the user an error messagge saying that the password is missing at least one capital letter, at least one lowercase letter and  
+one number.
 
 
 */
