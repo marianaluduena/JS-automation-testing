@@ -111,6 +111,13 @@ validationMessage = "Valid Password";
 fillForm("P@ssw0rD", "TC-001: valid password format", "Valid Password");
 
 
+/* Improvement suggestion
+
+- Showing the user a success messagge or icon to let them know their password was successfully retored
+will improve the user's experience.
+*/
+
+
 
 /* TEST CASE 2: 
 
@@ -227,7 +234,7 @@ Expected result: "Invalid Password".
 
 validationMessage = "Invalid Password";
 
-fillForm("001122", "TC-009: Only  numbers password", "Invalid Password");
+fillForm("001122", "TC-009: Only numbers password", "Invalid Password");
 
 /* Improvement suggestion
 
