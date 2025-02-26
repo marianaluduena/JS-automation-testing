@@ -2,7 +2,7 @@
 
 This is a QA testing project with **JavaScript using only the DevTools to automate Test Cases for the site Bugeater**. This project wraps everything I've learned during the Course Basic JavaScript for Testers. 
 
-**The test cases are directly in the JS code (see folder )**
+**The test cases are directly in the JS code (see folder "test cases and " )**
 
 URL to Bugeater: https://bugeater.web.app/
 
