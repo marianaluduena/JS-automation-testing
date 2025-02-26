@@ -26,12 +26,9 @@ It has a few challenges that will be cover in this project:
 - Challenge #1.2: Number Division
 - Challenge #1.3: Password Restore
 - Challenge #1.4: Update Profile
-- Challenge #1.5: Number Multiplication
 
 ## Scripted Testing 🤖
 
-- Challenge #2.1: Number Multiplication
-- Challenge #2.2: Number Division
 - Challenge #2.3: Password Validation
 - Challenge #2.4: Create Profile
 - Challenge #2.5: Currency Converter
